@@ -20,7 +20,8 @@ a{color:inherit}
 .wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
 header{padding-block:1.25rem}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{font:900 1.75rem/1 var(--display);text-decoration:none;letter-spacing:.01em}
+.brand{font:900 1.75rem/1 var(--display);text-decoration:none;letter-spacing:.01em;display:flex;flex-direction:column;gap:.2rem}
+.brand small{font:600 .8125rem/1.2 var(--body);letter-spacing:0;color:var(--mute)}
 nav{display:flex;gap:1.5rem;font-weight:600;font-size:1rem}
 nav a{text-decoration:none;padding-block:.6rem}
 nav a:hover{text-decoration:underline;text-underline-offset:.3em}
@@ -82,13 +83,13 @@ footer .wrap{display:grid;gap:1rem}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="#top">BRP</a><nav aria-label="Main"><a href="#work">Work</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav></div></header>
+<header><div class="wrap"><a class="brand" href="#top">BRP<small>Beshamas Esteem Trading Society BRP LLC</small></a><nav aria-label="Main"><a href="#work">Work</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav></div></header>
 
 <main id="top">
 <div class="hero hero-in"><div class="wrap">
   <div>
     <h1>Websites for neighborhood businesses.</h1>
-    <p class="lede">We design and build fast, good-looking sites for restaurants, shops and trades. One price to build it, and an optional monthly plan to keep it running.</p>
+    <p class="lede">BRP is the web design business of Beshamas Esteem Trading Society BRP LLC. We design and build fast, good-looking sites for restaurants, shops and trades. One price to build it, and an optional monthly plan to keep it running.</p>
     <div class="cta"><a class="btn btn-main" href="#work">See our work</a><a class="btn btn-line" href="#contact">Get in touch</a></div>
   </div>
   <div class="stack" aria-hidden="true">
