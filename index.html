@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beshamas Esteem Trading Society BRP LLC | Websites for neighborhood businesses</title>
+<meta name="description" content="Beshamas Esteem Trading Society BRP LLC designs and builds fast, mobile-friendly websites for restaurants, shops and trades. One price to build, an optional monthly plan to keep it running.">
+<style>
+@font-face{font-family:"Big Shoulders Display";src:url("fonts/big-shoulders-display.woff2") format("woff2");font-weight:800 900;font-display:swap}
+@font-face{font-family:"Barlow";src:url("fonts/barlow-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow";src:url("fonts/barlow-600.woff2") format("woff2");font-weight:600;font-display:swap}
+:root{--paper:#edf0f4;--ink:#101820;--mute:#4a5565;--line:#cdd4de;--cobalt:#2b4bff;--cobalt-d:#1c35c9;--white:#fff;
+--display:"Big Shoulders Display","Arial Narrow",sans-serif;--body:"Barlow",system-ui,sans-serif;--gut:clamp(1.25rem,5vw,3.5rem);--max:74rem}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+header{padding-block:1.25rem}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font:900 1.75rem/1 var(--display);text-decoration:none;letter-spacing:.01em}
+nav{display:flex;gap:1.5rem;font-weight:600;font-size:1rem}
+nav a{text-decoration:none;padding-block:.6rem}
+nav a:hover{text-decoration:underline;text-underline-offset:.3em}
+@media(max-width:560px){nav a:not(:last-child){display:none}}
+.hero{padding-block:clamp(2.5rem,7vw,6rem) clamp(3rem,7vw,6rem)}
+.hero .wrap{display:grid;gap:3rem;align-items:center}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1.15fr;gap:4rem}}
+h1{margin:0;font:900 clamp(3.25rem,9vw,6.75rem)/.9 var(--display);letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:1.5rem 0 0;max-width:34ch;font-size:clamp(1.125rem,1.7vw,1.375rem);color:var(--mute)}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border-radius:999px;font:600 1.0625rem/1 var(--body);text-decoration:none;transition:transform .16s cubic-bezier(.23,1,.32,1),background-color .2s}
+.btn:active{transform:scale(.97)}
+.btn-main{background:var(--cobalt);color:var(--white)}
+.btn-main:hover{background:var(--cobalt-d)}
+.btn-line{border:1.5px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.stack{position:relative;aspect-ratio:1/.82}
+.frame{position:absolute;width:74%;border-radius:10px;overflow:hidden;background:var(--white);box-shadow:0 1px 0 var(--line),0 22px 50px -18px rgb(16 24 32/.4)}
+.frame::before{content:"";display:block;height:1.4rem;background:#e3e8ef;border-bottom:1px solid var(--line)}
+.frame img{width:100%}
+.f1{left:0;top:0;z-index:1}.f2{right:0;top:18%;z-index:2}.f3{left:8%;bottom:0;z-index:3}
+.hero-in .f1{animation:settle .9s .05s cubic-bezier(.23,1,.32,1) both}
+.hero-in .f2{animation:settle .9s .17s cubic-bezier(.23,1,.32,1) both}
+.hero-in .f3{animation:settle .9s .29s cubic-bezier(.23,1,.32,1) both}
+@keyframes settle{from{opacity:0;transform:translateY(28px)}}
+section{padding-block:clamp(3rem,7vw,5.5rem)}
+h2{margin:0 0 .5rem;font:900 clamp(2.25rem,5vw,3.75rem)/.95 var(--display)}
+.sub{margin:0 0 2.5rem;color:var(--mute);max-width:52ch}
+.lead-work{display:grid;gap:1.25rem;margin-bottom:2.5rem}
+@media(min-width:900px){.lead-work{grid-template-columns:1.6fr 1fr;align-items:end;gap:2.5rem}}
+.shot{border-radius:12px;overflow:hidden;background:var(--white);box-shadow:0 1px 0 var(--line),0 18px 40px -22px rgb(16 24 32/.35)}
+.shot::before{content:"";display:block;height:1.5rem;background:#e3e8ef;border-bottom:1px solid var(--line)}
+.work h3{margin:0 0 .35rem;font:800 clamp(1.5rem,2.6vw,2rem)/1.05 var(--display)}
+.work p{margin:0;color:var(--mute);font-size:1.0625rem;max-width:44ch}
+.work .meta{margin:.35rem 0 0;font-size:.9375rem}
+.trio{display:grid;gap:2.25rem}
+@media(min-width:760px){.trio{grid-template-columns:repeat(3,1fr);gap:2rem}}
+.trio .shot{margin-bottom:1rem}
+.band{background:var(--ink);color:var(--paper);padding-inline:var(--gut)}
+.band .wrap{padding-inline:0}
+.band h2{color:var(--paper)}
+.steps{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:2rem;counter-reset:s}
+@media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr);gap:3rem}}
+.steps li{counter-increment:s;display:grid;gap:.5rem}
+.steps li::before{content:counter(s);font:900 3.25rem/.8 var(--display);color:#8da2ff}
+.steps h3{margin:.25rem 0 0;font:800 1.625rem/1.1 var(--display)}
+.steps p{margin:0;color:#b9c3d3;max-width:32ch;font-size:1.0625rem}
+.offer{display:grid;gap:2rem}
+@media(min-width:800px){.offer{grid-template-columns:1fr 1fr;gap:4rem}}
+.offer h3{margin:0 0 .4rem;font:800 1.75rem/1.1 var(--display)}
+.offer p{margin:0;color:var(--mute);max-width:42ch}
+.offer>div{border-top:2px solid var(--ink);padding-top:1.25rem}
+.note{margin-top:2rem;color:var(--mute);font-size:1rem;max-width:62ch}
+footer{padding-block:3rem;border-top:1px solid var(--line);font-size:1rem;color:var(--mute)}
+footer .wrap{display:grid;gap:1rem}
+@media(min-width:800px){footer .wrap{grid-template-columns:1fr auto;align-items:end}}
+.contact a{font:800 1.5rem/1.2 var(--display);color:var(--ink);text-underline-offset:.2em}
+@media(prefers-reduced-motion:reduce){.hero-in .frame{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#top">Beshamas BRP</a><nav aria-label="Main"><a href="#work">Work</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav></div></header>
+
+<main id="top">
+<div class="hero hero-in"><div class="wrap">
+  <div>
+    <h1>Websites for neighborhood businesses.</h1>
+    <p class="lede">We design and build fast, good-looking sites for restaurants, shops and trades. One price to build it, and an optional monthly plan to keep it running.</p>
+    <div class="cta"><a class="btn btn-main" href="#work">See our work</a><a class="btn btn-line" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <div class="frame f1"><img src="img/sttropez.jpg" alt="" width="1200" height="563"></div>
+    <div class="frame f2"><img src="img/bbv.jpg" alt="" width="1200" height="563"></div>
+    <div class="frame f3"><img src="img/adlux.jpg" alt="" width="1200" height="563"></div>
+  </div>
+</div></div>
+
+<section id="work" class="work"><div class="wrap">
+  <h2>Recent work</h2>
+  <p class="sub">Concept sites we designed for local businesses, using their public menus, hours and reviews. Each one works on a phone first.</p>
+
+  <div class="lead-work">
+    <div class="shot"><img src="img/bbv.jpg" alt="Big Burger V concept website: large headline, rating and menu prices" width="1200" height="563" loading="lazy"></div>
+    <div>
+      <h3>Big Burger V</h3>
+      <p>A family-run burger stand in Houston since 1973. The site puts the menu with real prices, opening hours, a map and a one-tap call button up front.</p>
+      <p class="meta">Restaurant, concept site</p>
+    </div>
+  </div>
+
+  <div class="trio">
+    <div><div class="shot"><img src="img/sttropez.jpg" alt="St Tropez Bistro concept website" width="1200" height="563" loading="lazy"></div><h3>St Tropez Bistro &amp; French Bakery</h3><p>Menu, catering enquiries and location for a bistro and bakery.</p><p class="meta">Restaurant and bakery, concept site</p></div>
+    <div><div class="shot"><img src="img/reys.jpg" alt="Rey's Auto Repair concept website" width="1200" height="563" loading="lazy"></div><h3>Rey's Auto Repair</h3><p>Services, reviews and a click-to-call button for a Miami-Dade repair shop.</p><p class="meta">Auto repair, concept site</p></div>
+    <div><div class="shot"><img src="img/adlux.jpg" alt="ADLUX Jewelry and Watches concept website" width="1200" height="563" loading="lazy"></div><h3>ADLUX Jewelry &amp; Watches</h3><p>A four-language site with a map and contact details for a jewelry store in Sunny Isles Beach.</p><p class="meta">Retail, concept site</p></div>
+  </div>
+</div></section>
+
+<section id="how" class="band"><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><h3>We build a preview</h3><p>You see your own site, with your menu, hours and photos, before you pay for anything.</p></li>
+    <li><h3>You approve and sign</h3><p>A one-page written agreement sets the price and what is included. A deposit starts the final work.</p></li>
+    <li><h3>We launch it</h3><p>Your site goes live on your own domain. Pick a monthly plan if you want us to keep it up to date.</p></li>
+  </ol>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>What we offer</h2>
+  <p class="sub">Prices are quoted per project and agreed in writing before any work starts.</p>
+  <div class="offer">
+    <div><h3>Website design and build</h3><p>A custom, mobile-friendly site for one location: design, content setup, your domain connected and launch. Paid once, in two parts.</p></div>
+    <div><h3>Care plan, monthly</h3><p>Hosting, domain renewal help and small updates, like a new menu or new hours. Optional, and you can cancel it.</p></div>
+  </div>
+  <p class="note">Payments are taken by invoice or payment link through Stripe. Terms, including cancellation and refunds, are set out in each written agreement.</p>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div><strong>Beshamas Esteem Trading Society BRP LLC</strong><br>Web design for local businesses<br>Sunny Isles Beach, Florida</div>
+  <div class="contact"><a href="mailto:benjipri1@gmail.com">benjipri1@gmail.com</a></div>
+</div></footer>
+</body>
+</html>
